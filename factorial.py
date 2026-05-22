@@ -1,0 +1,9 @@
+# Python program to find the factorial of number
+
+n = int(input("Enter a number: "))
+facto = 1
+for i in range(1, n+1):
+    facto=facto*i
+
+print(facto)
+    
