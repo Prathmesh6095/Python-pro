@@ -1,9 +1,11 @@
-# Python program to find the factorial of number
+# Program to check leap year or not
+yr = int(input("Enter a year: "))
 
-n = int(input("Enter a number: "))
-facto = 1
-for i in range(1, n+1):
-    facto=facto*i
+if (yr % 400 == 0) and (yr % 100 == 0):
+    print(yr, "is a leap year.")
 
-print(facto)
-    
+elif (yr % 4 == 0 ) and (yr % 100 != 0): 
+    print(yr, "is a leap year.")
+
+else:
+    print(yr, "isn't leap year.")
