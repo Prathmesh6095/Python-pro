@@ -1,11 +1,6 @@
-# Program to check leap year or not
-yr = int(input("Enter a year: "))
+import random
 
-if (yr % 400 == 0) and (yr % 100 == 0):
-    print(yr, "is a leap year.")
+num = random.randint(0, 10)
 
-elif (yr % 4 == 0 ) and (yr % 100 != 0): 
-    print(yr, "is a leap year.")
+print(num)
 
-else:
-    print(yr, "isn't leap year.")
