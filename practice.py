@@ -1,14 +1,16 @@
-n1 = 0
-n2 = 1
-n = int(input("Enter a number: "))
+n = int(input("Enter a number more than two digit : "))
 
-if n == 1 and n < 1:
-    print(n1)
+sum = 0 
+temp = n
+
+while temp > 0:
+    digit = temp % 10
+    cube = digit ** 3
+    sum = sum + cube
+    temp //= 10
+
+if sum == n:
+    print("It's  an Armstrong number.")
+
 else:
-    print(n1)
-    print(n2)
-    for i in range(2, n):
-         c = n1 + n2
-         n1 = n2
-         n2 = c
-         print(c)
+    print("It's not Armstrong number.")
