@@ -1,15 +1,10 @@
-a = 0
-b = 1
-n = int(input("Enter a number: "))
+yr = int(input("Enter a year: "))
 
-if n == 1 or n < 0:
-    print(a)
+if (yr % 400 == 0) and (yr % 100 == 0):
+    print("It's  leap year")
+
+elif (yr % 4 == 0) and (yr % 100 != 0):
+    print("It's leap year")
 
 else:
-    print(a)
-    print(b)
-    for i in range(2,n):
-        c = a + b
-        a = b
-        b = c
-        print(c)
+    print("It's  not leap year.")
