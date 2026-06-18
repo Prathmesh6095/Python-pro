@@ -1,5 +1,7 @@
-km = int(input("Enter dist in km: "))
+n = int(input("Enter a number: "))
 
-miles = km*(0.621371)
-
-print(miles)
+facto = 1
+for i in range(1, n+1):
+    facto=facto*i
+    
+print(facto)
