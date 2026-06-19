@@ -1,12 +1,7 @@
-n = int(input("Enter a number: "))
+x = 13
+y = 12
 
-if n <0:
-    print("Invalid choice. Enter +ve number.")
+x,y =  y,x
 
-else:
-    sum = 0
-    while n > 0:
-        sum += n
-        n -= 1
-
-        print(sum)
+print(f"Value {x} is {y}")
+print(f"Value {y} is {x}")
