@@ -1,9 +1,16 @@
-l1 = ["Patu",3,25,365,"Rohan"]
+marks = []
 
-print(l1.count(3))
-print(l1.index(365))
-# print(l1.pop(3))
+m1 = int(input("Enter the marks: "))
+marks.append(m1)
 
+m2 = int(input("Enter the marks :"))
+marks.append(m2)
+m3 = int(input("Enter the marks :"))
+marks.append(m3)
+m4 = int(input("Enter the marks :"))
+marks.append(m4)
+m5 = int(input("Enter the marks :"))
+marks.append(m5)
 
-print(l1.insert(3,"3"))
-print(l1)
+marks.sort()
+print(marks)
