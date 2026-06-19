@@ -1,7 +1,7 @@
-x = 13
-y = 12
+letter = '''
+        Hii <|Name|>
+        I'm Kai, Wanna meet you!
+        come at <|Location|>
+        '''
 
-x,y =  y,x
-
-print(f"Value {x} is {y}")
-print(f"Value {y} is {x}")
+print(letter.replace("<|Name|>","Prathamesh").replace("<|Location|>","BeyStadium."))
