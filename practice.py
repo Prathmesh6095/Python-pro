@@ -1,16 +1,10 @@
-n = int(input("Enter a number more than two digit : "))
+c1 = "Make a more money!"
+c2 = "You won prize money!"
+c3 = "Subscribe this!"
 
-sum = 0 
-temp = n
-
-while temp > 0:
-    digit = temp % 10
-    cube = digit ** 3
-    sum = sum + cube
-    temp //= 10
-
-if sum == n:
-    print("It's  an Armstrong number.")
+message = "You won prize money"
+if(c1 in message or c2 in message or c3 in message):
+    print("It's a scam.")
 
 else:
-    print("It's not Armstrong number.")
+    print("It's valid website.")
