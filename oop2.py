@@ -1,3 +1,4 @@
+# Multiple inheritance
 class A:
     varA = "Welcome to class A"
 
