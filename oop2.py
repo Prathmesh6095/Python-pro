@@ -1,12 +1,12 @@
-class Account:
-    def __init__(self,  acc_no, acc_pass):
-        self.acc_no = acc_no;
-        self.__acc_pass = acc_pass;
+class Person:
+    __name = "anonymous"
 
-    def reset_pass(self):
-        print(self.__acc_pass);
+    def __hello(self ):
+        print("Hello person!")
 
-ac1 = Account("Prathamesh", "123asd")
+    def welcome(self):
+        self.__hello()
 
-print(ac1.acc_no)
-print(ac1.reset_pass())
+p1 = Person()
+
+print(p1.welcome())
