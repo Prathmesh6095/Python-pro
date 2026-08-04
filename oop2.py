@@ -19,5 +19,5 @@ class ToyotaCar(Car):
             # self.type = type
             
 
-car1 = ToyotaCar("prius","electric")
+car1 = ToyotaCar("prius", "electric")
 print(car1.type)
