@@ -13,6 +13,6 @@ class ToyotaCar(Car):
         self.name = name
 
 car1 = ToyotaCar("Fortuner")
-car2 = ToyotaCar("prius")
+car2 = ToyotaCar("prius ")
 
 print(car1.start())
