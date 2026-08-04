@@ -1,14 +1,21 @@
-# Multiple inheritance
-class A:
-    varA = "Welcome to class A"
+class Car:
 
-class B:
-    varB = "Welcome to class B"
+    def __init__(self, type):
+          self.type = type
+          
+    @staticmethod
+    def start():
+            print("Car started.")
+    
+    @staticmethod
+    def stop():
+          print("Car stopped.")
 
-class C(A, B):
-    varC = "Welcome to class A B C"
+class ToyotaCar(Car):
+      def __init__(self, name, type):
+            self.name = name
+            # self.type = type
+            super().__init__(type)
 
-c1 = C()
-print(c1.varC)
-print(c1.varB)
-print(c1.varA)
+car1 = ToyotaCar("prius","electric")
+print(car1.type)
