@@ -1,12 +1,18 @@
-class Person:
-    __name = "anonymous"
+# Inheritance 
+class Car:
+    @staticmethod
+    def start():
+        print("Car started.")
 
-    def __hello(self ):
-        print("Hello person!")
+    @staticmethod
+    def stop():
+        print("Car stopped.")
 
-    def welcome(self):
-        self.__hello()
+class ToyotaCar(Car):
+    def __init__(self, name):
+        self.name = name
 
-p1 = Person()
+car1 = ToyotaCar("Fortuner")
+car2 = ToyotaCar("prius")
 
-print(p1.welcome())
+print(car1.start())
