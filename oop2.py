@@ -1,13 +1,21 @@
-class Circle:
-    def __init__(self, radius):
-        self.radius = radius
+class Employee:
+    def __init__(self, role, dept, salary):
+        self.role = role
+        self.dept = dept
+        self.salary = salary
 
-    def Area(self):
-        return (22/7) * self.radius ** 2
-    
-    def perimeter(self):
-        return 2 * 3.14 * self.radius
+    def showDetails(self):
+        print("Role = ", self.role)
+        print("Dept = ", self.dept)
+        print("Salary = ", self.salary)
 
-c1 = Circle(21)
-print(c1.Area())
-print(c1.perimeter())
+class Engineer(Employee):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        super().__init__("Engineer","IT","75,000")
+
+eng1 = Engineer("Elon Musk", 40)
+eng1.showDetails()
+# e1 = Employee("Accountant", "Finance", "60,000")
+# e1.showDetails() 
