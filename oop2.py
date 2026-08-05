@@ -1,8 +1,11 @@
+# Class method
 class Person:
     name = "anonymous"
 
-    def changeName(self, name):
-        self.__class__.name = "Rahul"
+    # def changeName(self, name):
+    #     self.__class__.name = "Rahul"
+
+
 
 p1 = Person()
 p1.changeName("Rahul Yadav")
