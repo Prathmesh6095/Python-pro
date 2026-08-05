@@ -1,18 +1,13 @@
-# Property decorator
-class Student:
-    def __init__(self, phy, chem, math):
-        self.phy = phy
-        self.chem = chem
-        self.math = math
-        
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
 
-    @property
-    def calcPercentage(self):
-        return str((self.phy + self.chem + self.math)/3) + "%"
+    def Area(self):
+        return (22/7) * self.radius ** 2
+    
+    def perimeter(self):
+        return 2 * 3.14 * self.radius
 
-
-stu1 = Student(90,98,96)
-print(stu1.calcPercentage)
-
-stu1.phy = 76
-print(stu1.calcPercentage)
+c1 = Circle(21)
+print(c1.Area())
+print(c1.perimeter())
