@@ -1,13 +1,18 @@
-# Class method
-class Person:
-    name = "anonymous"
+# Property decorator
+class Student:
+    def __init__(self, phy, chem, math):
+        self.phy = phy
+        self.chem = chem
+        self.math = math
+        self.percentage = str((self.phy + self.chem + self.math)/3) + "%"
 
-    # def changeName(self, name):
-    #     self.__class__.name = "Rahul"
+    @property
+    def calcPercentage(self):
+        return str((self.phy + self.chem + self.math)/3) + "%"
 
 
+stu1 = Student(90,98,96)
+print(stu1.percentage)
 
-p1 = Person()
-p1.changeName("Rahul Yadav")
-print(p1.name)
-print(Person.name)
+stu1.phy = 76
+print(stu1.calcPercentage)
