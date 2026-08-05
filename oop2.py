@@ -1,21 +1,12 @@
-class Employee:
-    def __init__(self, role, dept, salary):
-        self.role = role
-        self.dept = dept
-        self.salary = salary
+class Order:
+    def __init__(self, item, price):
+        self.item = item
+        self.price = price
 
-    def showDetails(self):
-        print("Role = ", self.role)
-        print("Dept = ", self.dept)
-        print("Salary = ", self.salary)
+    def __gt__(self, ord2):
+        return self.price > ord2.price
 
-class Engineer(Employee):
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-        super().__init__("Engineer","IT","75,000")
+ord1 = Order("Dumbel", 2000)     
+ord2 = Order("Belt", 350)     
 
-eng1 = Engineer("Elon Musk", 40)
-eng1.showDetails()
-# e1 = Employee("Accountant", "Finance", "60,000")
-# e1.showDetails() 
+print(ord1 > ord2) # True 
