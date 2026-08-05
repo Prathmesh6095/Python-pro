@@ -4,7 +4,7 @@ class Student:
         self.phy = phy
         self.chem = chem
         self.math = math
-        self.percentage = str((self.phy + self.chem + self.math)/3) + "%"
+        
 
     @property
     def calcPercentage(self):
@@ -12,7 +12,7 @@ class Student:
 
 
 stu1 = Student(90,98,96)
-print(stu1.percentage)
+print(stu1.calcPercentage)
 
 stu1.phy = 76
 print(stu1.calcPercentage)
