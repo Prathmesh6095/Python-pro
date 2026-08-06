@@ -6,7 +6,7 @@ class Order:
     def __gt__(self, ord2):
         return self.price > ord2.price
 
-ord1 = Order("Dumbel", 2000)     
+ord1 = Order("Dumbel",2000)     
 ord2 = Order("Belt", 350)     
 
 print(ord1 > ord2) # True 
